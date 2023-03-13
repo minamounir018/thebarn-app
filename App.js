@@ -39,13 +39,13 @@ export function TabNavigator({ navigation }) {
                 source={require("./assets/logo.png")}
               />
             ) : (
-              <Icon name={iconName} size={size} color={color} />
+              <Icon name={iconName} size={size-2} color={color} />
             )}
           </View>
         )
       },
       tabBarActiveTintColor: '#7C0A02',
-      tabBarInactiveTintColor: 'gray',
+      tabBarInactiveTintColor: '#666666',
       tabBarShowLabel: false
     })}>
       <Tab.Screen name="Home" component={HomeScreen} />

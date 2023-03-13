@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "fit-app",
-    "slug": "fit-app",
+    "name": "thebarn-app",
+    "slug": "thebarn-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,7 +15,7 @@
       [
         "expo-barcode-scanner",
         {
-          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+          "cameraPermission": "Allow Thebarn to access camera."
         }
       ]
     ],

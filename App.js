@@ -13,7 +13,7 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 export function TabNavigator({ navigation }) {
-  
+
   return (
     <Tab.Navigator screenOptions={({ route }) => ({
       tabBarIcon: ({ focused, color, size }) => {
@@ -31,7 +31,7 @@ export function TabNavigator({ navigation }) {
         }
 
         return (
-          <View style={route.name === 'Scan' ? { backgroundColor: 'white', borderColor: '#7C0A02', borderRadius: '50%', borderWidth: 2, position: 'absolute', bottom: 20 } : {}}>
+          <View style={route.name === 'Scan' ? { backgroundColor: 'white', borderColor: '#7C0A02', borderRadius: 50, borderWidth: 2, position: 'absolute', bottom: 20 } : {}}>
             {route.name === 'Scan' ? (
               <Image
                 resizeMode={'cover'}
@@ -39,7 +39,7 @@ export function TabNavigator({ navigation }) {
                 source={require("./assets/logo.png")}
               />
             ) : (
-              <Icon name={iconName} size={size-2} color={color} />
+              <Icon name={iconName} size={size - 2} color={color} />
             )}
           </View>
         )
